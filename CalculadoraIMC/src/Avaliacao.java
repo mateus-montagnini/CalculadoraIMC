@@ -13,12 +13,12 @@ public class Avaliacao {
 
         double peso = Double.parseDouble(entradaPeso);
         double altura = Double.parseDouble(entradaAltura);
+        String result = "";
 
         CalculadoraIMC calculadoraIMC = new CalculadoraIMC();
-        calculadoraIMC.calc(name, peso, altura);
+        calculadoraIMC.calc(result, name, peso, altura);
+
+        scanner.close();
     }
 
-    public void validacao() {
-
-    }
 }
